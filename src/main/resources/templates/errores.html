@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 class="mt-4">Errores en el formulario:</h1>
+			<div class="card mb-4">
+            	<div class="card-body">
+            		<table>
+            			<tr th:each="e : ${errores}">
+            				<td th:text="${e}" />
+            			</tr>
+            		</table>
+            	</div>
+            </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Spring MVC / Thymeleaf</title>
+
+<!-- Custom fonts for this template-->
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
+	type="text/css">
+
+<!-- Page level plugin CSS-->
+<link href="vendor/datatables/dataTables.bootstrap4.css"
+	rel="stylesheet">
+
+<!-- Custom styles for this template-->
+<link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="card mb-4">
+		<div class="card-body">
+			<h1 class="mb-0">Ingreso de nuevo alumno:</h1>
+			<br />
+			<form method="post" th:action="@{/parametros}">
+				<div class="form-group">
+					<label class="small mb-1" for="nombres">Nombres </label><input
+						class="form-control py-4" id="nombres" type="text"
+						placeholder="Ingrese Nombres" style="width: 400px" name="nombres" />
+				</div>
+				<div class="form-group">
+					<label class="small mb-1" for="apellidos">Apellidos </label><input
+						class="form-control py-4" id="apellidos" type="text"
+						placeholder="Ingrese Apellidos" style="width: 400px" name="apellidos" />
+				</div>
+				<div class="form-group">
+					<label class="small mb-1" for="fecha_N">Fecha de Nacimiento </label><input
+						class="form-control py-4" id="fecha_N" type="date"
+						value="2020-04-26" style="width: 400px" name="fecha_N" />
+				</div>
+				<div class="form-group">
+					<label class="small mb-1" for="lugar_N">Lugar de Nacimiento </label><input
+						class="form-control py-4" id="lugar_N" type="text"
+						placeholder="Ingrese Lugar de Nacimiento" style="width: 400px" name="lugar_N" />
+				</div>
+				<div class="form-group">
+					<label class="small mb-1" for="instituto">Instituto o Colegio </label><input
+						class="form-control py-4" id="instituto" type="text"
+						placeholder="Ingrese Instituto o Colegio" style="width: 400px" name="instituto" />
+				</div>
+				<div class="form-group">
+					<label class="small mb-1" for="tel_F">Telefono Fijo </label><input
+						class="form-control py-4" id="tel_F" type="text"
+						placeholder="Ingrese Telefono Fijo" style="width: 400px" name="tel_F" />
+				</div>
+				<div class="form-group">
+					<label class="small mb-1" for="tel_M">Telefono Movil </label><input
+						class="form-control py-4" id="tel_M" type="text"
+						placeholder="Ingrese Movil" style="width: 400px" name="tel_M" />
+				</div>
+				
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary"
+						value="Guardar Alumno"/>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- Bootstrap core JavaScript-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Core plugin JavaScript-->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Page level plugin JavaScript-->
+	<script src="vendor/chart.js/Chart.min.js"></script>
+	<script src="vendor/datatables/jquery.dataTables.js"></script>
+	<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script src="js/sb-admin.min.js"></script>
+
+	<!-- Demo scripts for this page-->
+	<script src="js/demo/datatables-demo.js"></script>
+	<script src="js/demo/chart-area-demo.js"></script>
+
+</body>
+
+</html>
